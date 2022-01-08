@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* ::after,
+* ::before {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul ，ol {
+  list-style: none;
+}
+input,
+button {
+  font-family: inherit;
+}
+body {
+  background: #eeeeee;
+}
+.topSearch form {
+  margin: 39px 25px;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  height: 40px;
+}
+.topSearch form input {
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  margin-right: 12px;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+}
+.topSearch form button {
+  white-space: nowrap;
+  width: 88px;
+  color: #fff;
+  background: rgb(78, 110, 242);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+.mainPart .tagList {
+  margin: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mainPart .tagList li a {
+  display: block;
+  width: 160px;
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.mainPart .tagList .iconButton {
+  width: 80px;
+  height: 80px;
+  font-size: 70px;
+  line-height: 80px;
+}
+.mainPart .tagList .getUrl {
+  font-size: 16px;
+}
