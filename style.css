@@ -21,8 +21,13 @@ input,
 button {
   font-family: inherit;
 }
+
 body {
+  height: 100vh;
   background: #eeeeee;
+  background: url(./images/小丸子呆.jpeg);
+  background-size: auto 100%;
+  /* background-position: bottom; */
 }
 .topSearch form {
   margin: 39px 25px;
