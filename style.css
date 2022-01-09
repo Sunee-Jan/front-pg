@@ -7,6 +7,14 @@
 * ::before {
   box-sizing: border-box;
 }
+* {
+  -webkit-touch-callous: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 li {
   list-style: none;
 }
@@ -27,7 +35,6 @@ body {
   background: #eeeeee;
   background: url(./images/小丸子呆.jpeg);
   background-size: auto 100%;
-  /* background-position: bottom; */
 }
 .topSearch form {
   margin: 39px 25px;
@@ -46,6 +53,7 @@ body {
   margin-right: 12px;
   border-radius: 4px;
   background: rgb(255, 255, 255);
+  -webkit-user-select: auto;
 }
 .topSearch form button {
   white-space: nowrap;
@@ -56,6 +64,7 @@ body {
   border-radius: 4px;
   outline: none;
   border: none;
+  font-size: 16px;
 }
 .mainPart .tagList {
   margin: 0 25px;
@@ -63,20 +72,33 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.mainPart .tagList li a {
-  display: block;
+
+.mainPart .tagList li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 160px;
-  padding: 40px;
   text-align: center;
   background-color: #fff;
   margin-bottom: 20px;
 }
 .mainPart .tagList .iconButton {
-  width: 80px;
-  height: 80px;
+  margin-top: 40px;
   font-size: 70px;
   line-height: 80px;
 }
 .mainPart .tagList .getUrl {
+  margin-bottom: 40px;
   font-size: 16px;
+}
+
+.tagList .close {
+  display: none;
+  position: absolute;
+  padding: 2px;
+  top: -16px;
+  right: -9px;
+  color: #525252;
+  font-size: 35px;
 }
