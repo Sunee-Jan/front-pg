@@ -1,5 +1,5 @@
 $(function () {
-  let tag = 1;
+  let tag = 0;
   const $lastLi = $(".addTag");
   $("body").click(function () {
     $(".close").css("display", "none");
