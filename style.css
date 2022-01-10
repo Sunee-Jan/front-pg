@@ -7,6 +7,7 @@
 * ::before {
   box-sizing: border-box;
 }
+/* 禁止长按选择复制 */
 * {
   -webkit-touch-callous: none;
   -webkit-user-select: none;
@@ -43,6 +44,11 @@ body {
   max-width: 500px;
   height: 40px;
 }
+@media (min-width: 500px) {
+  .topSearch form {
+    margin: 82px auto;
+  }
+}
 .topSearch form input {
   padding: 0 15px;
   font-size: 16px;
@@ -72,9 +78,22 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
+@media (min-width: 500px) {
+  .mainPart .tagList {
+    width: 777px;
+    justify-content: start;
+    padding-left: 15px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 500px) {
+  .mainPart .tagList li {
+    margin-right: 30px;
+  }
+}
 .mainPart .tagList li {
   position: relative;
+  border-radius: 25% 0 25% 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,13 +111,15 @@ body {
   margin-bottom: 40px;
   font-size: 16px;
 }
-
+.tagList li:hover {
+  cursor: pointer;
+}
 .tagList .close {
-  display: none;
   position: absolute;
   padding: 2px;
-  top: -16px;
-  right: -9px;
+  top: -13px;
+  right: -7px;
   color: #525252;
   font-size: 35px;
+  cursor: default;
 }
