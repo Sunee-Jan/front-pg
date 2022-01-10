@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* ::after,
+* ::before {
+  box-sizing: border-box;
+}
+/* 禁止长按选择复制 */
+* {
+  -webkit-touch-callous: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul ，ol {
+  list-style: none;
+}
+input,
+button {
+  font-family: inherit;
+}
+
+body {
+  height: 100vh;
+  background: #eeeeee;
+  background: url(/小丸子呆.57c36439.jpeg);
+  background-size: auto 100%;
+}
+.topSearch form {
+  margin: 39px 25px;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  height: 40px;
+}
+@media (min-width: 500px) {
+  .topSearch form {
+    margin: 82px auto;
+  }
+}
+.topSearch form input {
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  margin-right: 12px;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  -webkit-user-select: auto;
+}
+.topSearch form button {
+  white-space: nowrap;
+  width: 88px;
+  color: #fff;
+  background: rgb(78, 110, 242);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+.mainPart .tagList {
+  margin: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 500px) {
+  .mainPart .tagList {
+    width: 777px;
+    justify-content: start;
+    padding-left: 15px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 500px) {
+  .mainPart .tagList li {
+    margin-right: 30px;
+  }
+}
+.mainPart .tagList li {
+  position: relative;
+  border-radius: 25% 0 25% 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.mainPart .tagList .iconButton {
+  margin-top: 40px;
+  font-size: 70px;
+  line-height: 80px;
+}
+.mainPart .tagList .getUrl {
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+.tagList li:hover {
+  cursor: pointer;
+}
+.tagList .close {
+  position: absolute;
+  padding: 2px;
+  top: -13px;
+  right: -7px;
+  color: #525252;
+  font-size: 35px;
+  cursor: default;
+}
+
+
+/*# sourceMappingURL=/style.0acb7686.css.map */
