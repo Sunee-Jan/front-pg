@@ -32,10 +32,21 @@ button {
 }
 
 body {
+  border: 1px solid transparent;
   height: 100vh;
-  background: #eeeeee;
-  background: url(小丸子呆.57c36439.jpeg);
+  background-color: #eaeaea;
+  background: url(极简壁纸1.b4300078.png);
   background-size: auto 100%;
+  /* background-position: -345px 0; */
+  background-position: center 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+@media (min-width: 600px) {
+  body {
+    background-size: 100% auto;
+    background-position: 0 0;
+  }
 }
 .topSearch form {
   margin: 39px 25px;
@@ -57,15 +68,16 @@ body {
   width: 100%;
   height: 100%;
   margin-right: 12px;
-  border-radius: 4px;
-  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  background: rgb(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   -webkit-user-select: auto;
 }
 .topSearch form button {
   white-space: nowrap;
   width: 88px;
   color: #fff;
-  background: rgb(78, 110, 242);
+  background: rgba(124, 122, 117, 0.8);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   outline: none;
@@ -99,7 +111,7 @@ body {
   align-items: center;
   width: 160px;
   text-align: center;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255, 0.6);
   margin-bottom: 20px;
 }
 .mainPart .tagList .iconButton {
@@ -125,4 +137,4 @@ body {
 }
 
 
-/*# sourceMappingURL=style.64759cdb.css.map */
+/*# sourceMappingURL=style.900cabd4.css.map */

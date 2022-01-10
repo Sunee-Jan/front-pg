@@ -8,8 +8,10 @@ const x = localStorage.getItem("x");
 const newString = JSON.parse(x);
 
 const hashMap = newString || [
-  { logo: "A", url: "https://www.acfun.cn" },
-  { logo: "B", url: "https://www.bilibili.com" },
+  { logo: "G", url: "https://www.github.com" },
+  { logo: "Y", url: "https://www.yuque.com" },
+  { logo: "D", url: "https://developer.mozilla.org" },
+  { logo: "D", url: "https://www.baidu.com" },
 ];
 
 const render = function () {

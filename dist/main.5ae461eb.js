@@ -127,11 +127,17 @@ $("body").click(function () {
 var x = localStorage.getItem("x");
 var newString = JSON.parse(x);
 var hashMap = newString || [{
-  logo: "A",
-  url: "https://www.acfun.cn"
+  logo: "G",
+  url: "https://www.github.com"
 }, {
-  logo: "B",
-  url: "https://www.bilibili.com"
+  logo: "Y",
+  url: "https://www.yuque.com"
+}, {
+  logo: "D",
+  url: "https://developer.mozilla.org"
+}, {
+  logo: "D",
+  url: "https://www.baidu.com"
 }];
 
 var render = function render() {
@@ -244,4 +250,4 @@ window.onbeforeunload = function () {
   localStorage.setItem("x", string);
 };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.d15605eb.js.map
+//# sourceMappingURL=main.5ae461eb.js.map
